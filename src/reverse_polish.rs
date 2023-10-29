@@ -158,8 +158,3 @@ pub fn print_equation_to_infix(equation: &Vec<Token>) {
 fn solve_empty() {
     assert_eq!(Err(ERR_MSG_NE_ONE), solve_reverse_polish(&Vec::new()));
 }
-
-#[test]
-fn compare_floats() {
-    assert_eq!(10.0, 10.0);
-}
