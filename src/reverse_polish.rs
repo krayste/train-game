@@ -63,7 +63,7 @@ pub fn validate_num_string(number: &str) -> Result<bool, &str> {
         return Err(ERR_MSG_NE_FOUR);
     }
 
-    if let Err(err) = number.parse::<u16>() {
+    if let Err(_) = number.parse::<u16>() {
         return Err(ERR_MSG_COULD_NOT_PARSE);
     }
 
